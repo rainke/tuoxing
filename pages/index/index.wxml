@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="page">
+  <scroll-view>
+    <swiper indicator-dots="{{true}}" autoplay="true">
+      <block wx:for="{{imgUrls}}" wx:key="*this">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" width="355" height="150"/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="orange-block"></view>
+    <include src="nav.wxml"></include>
+    <include src="destination.wxml"></include>
+    <view class="block"></view>
+    <include src="perfect.wxml"></include>
+    <view class="block"></view>
+    <view class="well-sale">
+      <view class="text-center info">销量景点<i class="icon-point-right"></i></view>
+      <import src="../template/template-sale.wxml" />
+      <block wx:for="{{sales}}" wx:key="id">
+        <template is="saleItem" data="{{...item}}"></template>
+      </block>
+    </view>
+    <view class="block"></view>
+  </scroll-view>
+</view>

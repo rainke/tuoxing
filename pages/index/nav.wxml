@@ -1,0 +1,14 @@
+<view class="nav">
+  <view class="nav-top">
+    <view wx:for="{{nav.top}}" wx:key="*this" bindtap="navTo" data-id="{{index}}">
+      <image src="http://wap.tuoxingwang.com/style/wap/images/index/index-icon{{index+1}}.png" mode="aspectFit"></image>
+      <view>{{item}}</view>
+    </view>
+  </view>
+  <view class="nav-bottom">
+    <view wx:for="{{nav.bottom}}" wx:key="*this" bindtap="navTo" data-id="{{index + 4}}">
+      <image src="http://wap.tuoxingwang.com/style/wap/images/index/index-icon{{index==3 ? index+6 : index+5}}.png" mode="aspectFit"></image>
+      <view>{{item}}</view>
+    </view>
+  </view>
+</view>

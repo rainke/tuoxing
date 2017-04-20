@@ -1,0 +1,15 @@
+<view class="perfect">
+  <view class="text-center info">精品推荐<i class="icon-point-right"></i></view>
+  <view>
+    <image src="http://wap.tuoxingwang.com/upload/201511/f6b617e5-717e-4d66-b667-6e6cdca1e88d.jpg" mode="aspectFill"></image>
+  </view>
+  <view class="text-center resort-title">敦煌莫高窟景区</view>
+  <view class="text-center resort-desc">世界文化遗产，人类文化瑰宝</view>
+  <view class="text-center resort-price">￥200</view>
+  <view>
+    <image src="http://wap.tuoxingwang.com/upload/201511/4188de7c-75ef-4916-ae0a-36bbec3d6269.jpg" mode="aspectFill"></image>
+  </view>
+  <view class="text-center resort-title">敦煌雅丹地貌</view>
+  <view class="text-center resort-desc">魔鬼城</view>
+  <view class="text-center resort-price">￥200</view>
+</view>

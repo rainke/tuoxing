@@ -1,0 +1,17 @@
+<template name="saleItem">
+  <view class="sale-item">
+    <view class="sale-img">
+      <image src="{{src}}"></image>
+    </view>
+    <view class="sale-content">
+      <view class="sale-title">
+        <view class="sale-title-name pull-left ellipsis">{{title}}</view>
+        <view class="sale-price">
+          <text>￥{{price}}</text>起
+        </view>
+      </view>
+      <view class="sale-desc">{{desc}}</view>
+      <view class="sale-cnt"><text>{{price}}</text>人购买</view>
+    </view>
+  </view>
+</template>

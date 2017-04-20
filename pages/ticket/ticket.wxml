@@ -1,0 +1,12 @@
+<view class="page">
+  <block>
+    <view class="nav">
+      <view>全部景区</view>
+      <view>默认排序</view>
+    </view>
+  </block>
+  <import src="../template/template-sale.wxml"/>
+  <block wx:for="{{list}}" wx:id="id">
+    <template is="saleItem" data="{{...item}}"></template>
+  </block>
+</view>

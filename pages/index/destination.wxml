@@ -1,0 +1,12 @@
+<view class="destination">
+  <view class="text-center info">热门目的地<i class="icon-circle-right"></i></view>
+  <view class="popular">
+    <view wx:for="{{destination}}" wx:key="id">
+      <view class="text-center dest-img">
+        <image src="{{item.img}}" mode="aspectFit"></image>
+      </view>
+      <view class="text-center resort-title">{{item.title}}</view>
+      <view class="text-center resort-desc">{{item.desc}}</view>
+    </view>
+  </view>
+</view>
